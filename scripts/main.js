@@ -1,5 +1,6 @@
 var app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 
+/*
 app.config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
@@ -10,3 +11,4 @@ app.config(['$routeProvider', '$locationProvider',
         $locationProvider.html5Mode(true);
     }
 ]);
+*/
