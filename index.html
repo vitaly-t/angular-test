@@ -10,10 +10,12 @@
 
 <div class="main-header">
     <div class="top-panel">
-        this is top panel
+        this is the top panel
+        <a href="#" class="btn btn-primary" ng-click="onToggle()"><span class="glyphicon glyphicon-sort"></span> Toggle Search Panel</a>
     </div>
-    <div class="search-panel">
-        this is just some search panel
+    <div class="search-panel" ng-show="showSearchPanel">
+        <input type="text" class="form-control">
+        <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Go</a>
     </div>
 </div>
 
@@ -31,13 +33,13 @@
 </div>
 
 <div class="mainBody">
-    Name: <input type="text" ng-model="filter" ng-change="onFilterChange()">
-    <br/>
+    Name: <input type="text" ng-model="filter" ng-change="onFilterChange()" class="form-control">
+
 
     <a ng-href="mailto:{{getEmails()}}" ng-disabled="!getEmails().length" class="btn btn-primary"><span
             class="glyphicon glyphicon-send"></span>
         Email selected members</a>
-    <br>
+
     <div class="user-list">
         <ul>
             <li ng-repeat="a in names">

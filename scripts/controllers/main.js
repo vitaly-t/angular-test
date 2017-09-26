@@ -4,9 +4,14 @@ app.controller('mainCtrl', ['$scope', 'userNames',
         var maxItems = 18;
 
         $scope.filter = '';
+        $scope.showSearchPanel = true;
 
         $scope.onFilterChange = function () {
             updateNames();
+        };
+
+        $scope.onToggle = function () {
+            $scope.showSearchPanel = !$scope.showSearchPanel;
         };
 
         $scope.menuStatus = {

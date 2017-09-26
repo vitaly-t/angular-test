@@ -1,0 +1,42 @@
+.main-header {
+
+}
+
+.top-panel {
+  padding: 10px;
+  font-size: 20px;
+  background-color: DarkBlue;
+  color: white;
+}
+
+.search-panel {
+  padding: 10px;
+}
+
+.search-panel.ng-remove {
+  animation: 1s slideUp;
+}
+
+.search-panel.ng-show {
+  animation: 1s slideDown;
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    height: 200px;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 200px;
+  }
+}
