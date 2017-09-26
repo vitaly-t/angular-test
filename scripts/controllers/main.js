@@ -9,6 +9,20 @@ app.controller('mainCtrl', ['$scope', 'userNames',
             updateNames();
         };
 
+        $scope.menuStatus = {
+            open: false
+        };
+
+        $scope.mailTo = [];
+
+        $scope.getEmails = function () {
+            return $scope.names.filter(function (item) {
+                return item.checked;
+            }).map(function (item) {
+                return item.email;
+            }).join(';');
+        };
+
         function updateNames() {
             $scope.names = userNames.find($scope.filter, maxItems);
         }

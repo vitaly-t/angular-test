@@ -6,7 +6,8 @@ app.directive('userInfo', [function () {
         templateUrl: './views/user-info.html',
         scope: {
             name: '=',
-            email: '='
+            email: '=',
+            checked: '='
         }
     }
 }]);
