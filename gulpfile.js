@@ -11,7 +11,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('copy', () => {
-        return gulp.src(['fonts/*', 'index.html', 'inputs/sprite.png'], {base: '.'})
+        return gulp.src(['views/*', 'fonts/*', 'index.html', 'inputs/sprite.png'], {base: '.'})
             .pipe(gulp.dest('www/'));
     }
 );
@@ -23,8 +23,9 @@ gulp.task('js', () => {
             'scripts/libs/angular/angular-animate.min.js',
             'scripts/libs/angular/angular-sanitize.min.js',
             'scripts/libs/ui-bootstrap-tpls.min.js',
-            'scripts/main.js',
+            'scripts/init.js',
             'scripts/controllers/*.js',
+            'scripts/directives/*.js',
             'scripts/services/*.js',
             'inputs/names.js'
         ])

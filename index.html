@@ -9,9 +9,10 @@
 <body ng-controller="mainCtrl">
 <div class="mainBody">
     Name: <input type="text" ng-model="filter" ng-change="onFilterChange()">
-    <p>
-        {{names.length}}
-    </p>
+    <br/>
+    <div ng-repeat="a in names">
+        <user-info name="a.name" email="a.email"></user-info>
+    </div>
 </div>
 </body>
 </html>
