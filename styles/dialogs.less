@@ -1,0 +1,53 @@
+/* Custom dialog/modal headers */
+
+.dialog-header-error {
+  background-color: #d2322d;
+}
+
+.dialog-header-wait {
+  background-color: #428bca;
+}
+
+.dialog-header-notify {
+  background-color: #eeeeee;
+}
+
+.modal-header.dialog-header-confirm,
+.dialog-header-confirm h4{
+  background-color: @ColorSecondary;
+}
+
+.modal-header {
+  background-color: @ColorEmphasis;
+}
+
+.modal-header h4{
+  color: @ColorBackground;
+}
+
+.modal-body {
+  background-color: lighten(@ColorCaption, 15%);
+}
+
+.modal-footer {
+  background-color: @ColorBackground;
+}
+
+// Temporary fix for the problem in the dialogs CSS:
+.modal-backdrop {
+  bottom: 0;
+}
+
+.modal {
+  top: 30%; // this positions dialogs nicely vertically;
+  // this should be applied to individual dialogs;
+}
+
+.modal-footer button {
+  width: 100px; // set size of buttons in the dialog's footer;
+}
+
+// Core Editing CSS
+.dialog-form table tr td {
+  padding: 4px 10px;
+}
