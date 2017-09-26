@@ -5,8 +5,6 @@ app.config(['$routeProvider', '$locationProvider',
         $routeProvider.when('/', {
             templateUrl: 'views/home.html',
             controller: 'homeCtrl'
-        }).otherwise({
-            redirectTo: '/error'
         });
         // This is to get rid of '/#/' in the url address:
         $locationProvider.html5Mode(true);
