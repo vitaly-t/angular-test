@@ -23,6 +23,6 @@ Follow the instructions in the PNG provided. Use the list of names in the JSON f
 
 The list of files enclosed for the project.
 
-`instructions.png` - general expectation for the UI layout with 
-names.js
-sprite.png
+* `instructions.png` - general expectation for the UI layout with 
+* `names.js` - names look-up values
+* `sprite.png` - images
