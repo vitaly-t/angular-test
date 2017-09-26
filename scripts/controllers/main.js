@@ -1,6 +1,8 @@
 app.controller('mainCtrl', ['$scope', 'userNames',
     function ($scope, userNames) {
 
+        var maxItems = 18;
+
         $scope.filter = '';
 
         $scope.onFilterChange = function () {
@@ -8,8 +10,7 @@ app.controller('mainCtrl', ['$scope', 'userNames',
         };
 
         function updateNames() {
-            console.log('Updating!');
-            $scope.names = userNames.find($scope.filter);
+            $scope.names = userNames.find($scope.filter, maxItems);
         }
 
         updateNames();
